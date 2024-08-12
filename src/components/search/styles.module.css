@@ -1,0 +1,79 @@
+.search_container {
+    padding: 131px 100px 295px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #CDE7FF;
+    background-image: url('./../../assets/icons/search_bg.svg');
+    background-repeat: no-repeat;
+    background-position: bottom -130px right 0;
+    width: 100%;
+}
+
+.search_container>h1 {
+    font-size: 64px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.85);
+}
+
+.search_form {
+    display: flex;
+    align-items: center;
+    box-shadow: 15px 7px 10px rgba(0, 0, 0, 0.5);
+    max-width: 1130px;
+}
+
+.search_form>input {
+    height: 105px;
+}
+
+.search_form>input[type='text'] {
+    font-size: 18px;
+    color: #000000;
+    border: none;
+    outline: none;
+    background-repeat: no-repeat;
+    flex: 1 0 458px;
+}
+
+.search_form>input[type='text']::placeholder {
+    color: #000000;
+}
+
+.search_company {
+    padding-left: 80px;
+    background-image: url('./../../assets/icons/search_company.svg');
+    background-position: 30px center;
+}
+
+.search_city {
+    padding-left: 206px;
+    background-image: url('./../../assets/icons/search_city.svg');
+    background-position: 170px center;
+}
+
+.search_form>input[type='submit'] {
+    background-color: #274059;
+    color: #ffffff;
+    flex: 1 0 213px;
+    font-size: 22px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}
+
+.search_form>div {
+    width: 1px;
+    height: 105px;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.search_form>div::after {
+    content: '';
+    position: absolute;
+    top: calc(50% - 10px);
+    width: 1px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
